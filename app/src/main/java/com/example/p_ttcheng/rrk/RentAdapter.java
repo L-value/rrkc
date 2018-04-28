@@ -15,7 +15,7 @@ import java.util.Random;
  * Created by p_ttcheng on 2018/4/3.
  */
 
-public class SecondAdapter  extends RecyclerView.Adapter<SecondAdapter.ViewHolder> {
+public class RentAdapter  extends RecyclerView.Adapter<RentAdapter.ViewHolder> {
 
     private String[] mDataset;
 
@@ -45,10 +45,10 @@ public class SecondAdapter  extends RecyclerView.Adapter<SecondAdapter.ViewHolde
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public SecondAdapter(String[] myDataset) {
+    public RentAdapter(String[] myDataset) {
         mDataset = myDataset;
     }
-    public SecondAdapter() {
+    public RentAdapter() {
     }
 
     @Override
@@ -71,7 +71,7 @@ public class SecondAdapter  extends RecyclerView.Adapter<SecondAdapter.ViewHolde
 
     // Create new views (invoked by the layout manager)
     @Override
-    public SecondAdapter.ViewHolder onCreateViewHolder(ViewGroup parent,
+    public RentAdapter.ViewHolder onCreateViewHolder(ViewGroup parent,
                                                    int viewType) {
 
         switch (viewType){
@@ -80,35 +80,35 @@ public class SecondAdapter  extends RecyclerView.Adapter<SecondAdapter.ViewHolde
                 View v = LayoutInflater.from(parent.getContext())
                         .inflate(R.layout.item_zuyong_autovp, parent, false);
                 // set the view's size, margins, paddings and layout parameters
-                SecondAdapter.ViewHolder vh = new SecondAdapter.ViewHolder(v,viewType);
+                RentAdapter.ViewHolder vh = new RentAdapter.ViewHolder(v,viewType);
                 return vh;
             case 1:
                 // create a new view
                 View v1 = LayoutInflater.from(parent.getContext())
                         .inflate(R.layout.item_zuyong_hot, parent, false);
                 // set the view's size, margins, paddings and layout parameters
-                SecondAdapter.ViewHolder vh1 = new SecondAdapter.ViewHolder(v1,viewType);
+                RentAdapter.ViewHolder vh1 = new RentAdapter.ViewHolder(v1,viewType);
                 return vh1;
             case 2:
                 // create a new view
                 View v2 = LayoutInflater.from(parent.getContext())
                         .inflate(R.layout.item_zuyong_yt, parent, false);
                 // set the view's size, margins, paddings and layout parameters
-                SecondAdapter.ViewHolder vh2 = new SecondAdapter.ViewHolder(v2,viewType);
+                RentAdapter.ViewHolder vh2 = new RentAdapter.ViewHolder(v2,viewType);
                 return vh2;
             case 3:
                 // create a new view
                 View v3 = LayoutInflater.from(parent.getContext())
                         .inflate(R.layout.item_zuyong_notify, parent, false);
                 // set the view's size, margins, paddings and layout parameters
-                SecondAdapter.ViewHolder vh3 = new SecondAdapter.ViewHolder(v3,viewType);
+                RentAdapter.ViewHolder vh3 = new RentAdapter.ViewHolder(v3,viewType);
                 return vh3;
             case 4:
                 // create a new view
                 View v4 = LayoutInflater.from(parent.getContext())
                         .inflate(R.layout.item_zuyong_item, parent, false);
                 // set the view's size, margins, paddings and layout parameters
-                SecondAdapter.ViewHolder vh4 = new SecondAdapter.ViewHolder(v4,viewType);
+                RentAdapter.ViewHolder vh4 = new RentAdapter.ViewHolder(v4,viewType);
                 return vh4;
         }
 
@@ -117,7 +117,7 @@ public class SecondAdapter  extends RecyclerView.Adapter<SecondAdapter.ViewHolde
 
     // Replace the contents of a view (invoked by the layout manager)
     @Override
-    public void onBindViewHolder(SecondAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(RentAdapter.ViewHolder holder, int position) {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
         // holder.mTextView.setText(mDataset[position]);
@@ -167,7 +167,6 @@ class SamplePagerAdapter extends PagerAdapter {
         textView.setTextColor(Color.WHITE);
         textView.setTextSize(50);
         view.addView(textView, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
-
         return textView;
     }
 

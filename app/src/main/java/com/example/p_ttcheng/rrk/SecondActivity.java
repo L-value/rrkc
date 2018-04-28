@@ -24,7 +24,7 @@ public class SecondActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(mLayoutManager);
 
         // specify an adapter (see also next example)
-        mSecondAdapter = new SecondAdapter();
+        mSecondAdapter = new RentAdapter();
         mRecyclerView.setAdapter(mSecondAdapter);
     }
 }

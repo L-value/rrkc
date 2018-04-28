@@ -10,7 +10,7 @@ import android.widget.TextView;
  * Created by p_ttcheng on 2018/4/3.
  */
 
-public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
+public class ZichanAdapter extends RecyclerView.Adapter<ZichanAdapter.ViewHolder> {
     private String[] mDataset;
 
     // Provide a reference to the views for each data item
@@ -25,10 +25,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public MyAdapter(String[] myDataset) {
+    public ZichanAdapter(String[] myDataset) {
         mDataset = myDataset;
     }
-    public MyAdapter() {
+    public ZichanAdapter() {
     }
 
     @Override
@@ -46,7 +46,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     // Create new views (invoked by the layout manager)
     @Override
-    public MyAdapter.ViewHolder onCreateViewHolder(ViewGroup parent,
+    public ZichanAdapter.ViewHolder onCreateViewHolder(ViewGroup parent,
                                                    int viewType) {
 
         switch (viewType){
