@@ -1,4 +1,4 @@
-package com.example.p_ttcheng.rrk;
+package com.example.p_ttcheng.rrk.views;
 
 /**
  * Created by p_ttcheng on 2018/4/3.
@@ -7,6 +7,7 @@ import android.content.Context;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
+
 import java.util.ArrayList;
 import java.util.List;
 

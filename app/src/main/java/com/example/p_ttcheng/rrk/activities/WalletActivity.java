@@ -1,13 +1,15 @@
-package com.example.p_ttcheng.rrk;
+package com.example.p_ttcheng.rrk.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class DrawLineTestActivity extends AppCompatActivity {
+import com.example.p_ttcheng.rrk.R;
+
+public class WalletActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.item_drawline);
+        setContentView(R.layout.activity_wallet);
     }
 }

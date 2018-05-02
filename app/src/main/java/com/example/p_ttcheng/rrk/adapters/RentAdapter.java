@@ -1,5 +1,7 @@
-package com.example.p_ttcheng.rrk;
+package com.example.p_ttcheng.rrk.adapters;
 
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v4.view.PagerAdapter;
 import android.support.v7.widget.RecyclerView;
@@ -7,7 +9,14 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.p_ttcheng.rrk.activities.MachineActivity;
+import com.example.p_ttcheng.rrk.activities.RentActivity;
+import com.example.p_ttcheng.rrk.activities.WalletActivity;
+import com.example.p_ttcheng.rrk.views.LoopViewPager;
+import com.example.p_ttcheng.rrk.R;
 
 import java.util.Random;
 
@@ -18,6 +27,7 @@ import java.util.Random;
 public class RentAdapter  extends RecyclerView.Adapter<RentAdapter.ViewHolder> {
 
     private String[] mDataset;
+    private Context context;
 
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
@@ -48,7 +58,8 @@ public class RentAdapter  extends RecyclerView.Adapter<RentAdapter.ViewHolder> {
     public RentAdapter(String[] myDataset) {
         mDataset = myDataset;
     }
-    public RentAdapter() {
+    public RentAdapter(Context context) {
+        this.context = context;
     }
 
     @Override
@@ -95,6 +106,21 @@ public class RentAdapter  extends RecyclerView.Adapter<RentAdapter.ViewHolder> {
                         .inflate(R.layout.item_zuyong_yt, parent, false);
                 // set the view's size, margins, paddings and layout parameters
                 RentAdapter.ViewHolder vh2 = new RentAdapter.ViewHolder(v2,viewType);
+                Button mWallet = (Button) v2.findViewById(R.id.btn_chongzhi);
+                mWallet.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        context.startActivity(new Intent(context, WalletActivity.class));
+                    }
+                });
+                Button mMachine = (Button) v2.findViewById(R.id.btn_machine);
+                mMachine.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        context.startActivity(new Intent(context, MachineActivity.class));
+                    }
+                });
+
                 return vh2;
             case 3:
                 // create a new view
@@ -107,6 +133,13 @@ public class RentAdapter  extends RecyclerView.Adapter<RentAdapter.ViewHolder> {
                 // create a new view
                 View v4 = LayoutInflater.from(parent.getContext())
                         .inflate(R.layout.item_zuyong_item, parent, false);
+                Button mRent = (Button) v4.findViewById(R.id.btn_Rent);
+                mRent.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        context.startActivity(new Intent(context, RentActivity.class));
+                    }
+                });
                 // set the view's size, margins, paddings and layout parameters
                 RentAdapter.ViewHolder vh4 = new RentAdapter.ViewHolder(v4,viewType);
                 return vh4;

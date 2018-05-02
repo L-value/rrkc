@@ -1,10 +1,14 @@
-package com.example.p_ttcheng.rrk;
+package com.example.p_ttcheng.rrk.adapters;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+
+import com.example.p_ttcheng.rrk.R;
+import com.example.p_ttcheng.rrk.activities.RecycleActivity;
 
 /**
  * Created by p_ttcheng on 2018/4/3.
@@ -12,6 +16,7 @@ import android.widget.TextView;
 
 public class ZichanAdapter extends RecyclerView.Adapter<ZichanAdapter.ViewHolder> {
     private String[] mDataset;
+    private Context context;
 
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
@@ -28,7 +33,8 @@ public class ZichanAdapter extends RecyclerView.Adapter<ZichanAdapter.ViewHolder
     public ZichanAdapter(String[] myDataset) {
         mDataset = myDataset;
     }
-    public ZichanAdapter() {
+    public ZichanAdapter(Context context) {
+        this.context = context;
     }
 
     @Override
@@ -55,6 +61,12 @@ public class ZichanAdapter extends RecyclerView.Adapter<ZichanAdapter.ViewHolder
                 View v = LayoutInflater.from(parent.getContext())
                         .inflate(R.layout.item_zichan_shuzi, parent, false);
                 // set the view's size, margins, paddings and layout parameters
+                v.findViewById(R.id.recycle).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        context.startActivity(new Intent(context, RecycleActivity.class));
+                    }
+                });
                 ViewHolder vh = new ViewHolder(v);
                 return vh;
             case 1:

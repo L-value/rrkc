@@ -1,4 +1,4 @@
-package com.example.p_ttcheng.rrk;
+package com.example.p_ttcheng.rrk.views;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -44,13 +44,5 @@ public class DrawLineView extends View {
         canvas.drawText("收益停止",getWidth()-120,getHeight()*4/7,mPaint);
     }
 
-    @Override
-    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-    }
 
-    @Override
-    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
-        super.onLayout(changed, left, top, right, bottom);
-    }
 }

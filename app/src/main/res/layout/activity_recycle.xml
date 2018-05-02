@@ -1,0 +1,232 @@
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.p_ttcheng.rrk.activities.RecycleActivity">
+
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="13dp"
+            android:text="资产余额"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView40"
+            android:layout_alignStart="@+id/textView40"
+            android:layout_below="@+id/textView40"
+            android:layout_marginTop="20dp"
+            android:text="ETH(个)" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView41"
+            android:layout_marginEnd="113dp"
+            android:layout_marginRight="113dp"
+            android:text="BTC(个)" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView41"
+            android:layout_alignStart="@+id/textView41"
+            android:layout_below="@+id/textView41"
+            android:layout_marginTop="14dp"
+            android:text="0.000000" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView42"
+            android:layout_alignStart="@+id/textView42"
+            android:layout_alignTop="@+id/textView43"
+            android:text="0.0000000" />
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView43"
+            android:layout_alignStart="@+id/textView43"
+            android:layout_below="@+id/textView43"
+            android:layout_marginTop="17dp"
+            android:text="LTC(个)" />
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView45"
+            android:layout_alignStart="@+id/textView45"
+            android:layout_below="@+id/textView45"
+            android:layout_marginTop="15dp"
+            android:text="0.0000000" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView44"
+            android:layout_alignStart="@+id/textView44"
+            android:layout_alignTop="@+id/textView45"
+            android:text="BHPC(个)" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0000000"
+            android:layout_alignBaseline="@+id/textView46"
+            android:layout_alignBottom="@+id/textView46"
+            android:layout_alignLeft="@+id/textView47"
+            android:layout_alignStart="@+id/textView47" />
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView46"
+            android:layout_alignStart="@+id/textView46"
+            android:layout_below="@+id/textView46"
+            android:layout_marginTop="27dp"
+            android:text="选择委托币种：ETH" />
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今日卖出价"
+            android:layout_below="@+id/textView49"
+            android:layout_alignRight="@+id/textView46"
+            android:layout_alignEnd="@+id/textView46"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView50"
+            android:layout_alignEnd="@+id/textView48"
+            android:layout_alignRight="@+id/textView48"
+            android:text="¥4301.00" />
+
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView50"
+            android:layout_alignStart="@+id/textView50"
+            android:layout_below="@+id/textView50"
+            android:layout_marginTop="38dp"
+            android:text="兑换数量：" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:layout_alignBottom="@+id/textView52"
+            android:layout_toRightOf="@+id/textView50"
+            android:layout_toEndOf="@+id/textView50" />
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView52"
+            android:layout_alignStart="@+id/textView52"
+            android:layout_below="@+id/textView52"
+            android:layout_marginTop="20dp"
+            android:text="预计获得" />
+
+        <TextView
+            android:id="@+id/textView54"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView53"
+            android:layout_alignLeft="@+id/textView51"
+            android:layout_alignStart="@+id/textView51"
+            android:text="¥0.00" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView53"
+            android:layout_alignStart="@+id/textView53"
+            android:layout_below="@+id/textView53"
+            android:layout_marginTop="34dp"
+            android:text="同意接受" />
+
+        <TextView
+            android:id="@+id/textView56"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/checkBox"
+            android:layout_toRightOf="@+id/checkBox"
+            android:text="《挖矿机器人委托交易协议》"
+            android:gravity="center_vertical|left"
+            android:layout_alignTop="@+id/checkBox"
+            android:layout_alignRight="@+id/editText2"
+            android:layout_alignEnd="@+id/editText2" />
+
+        <TextView
+            android:id="@+id/textView57"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="温馨提示："
+            android:layout_below="@+id/checkBox"
+            android:layout_alignLeft="@+id/checkBox"
+            android:layout_alignStart="@+id/checkBox" />
+
+        <TextView
+            android:id="@+id/textView58"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="发起委托后，受托交易以实际交易价格为准，受托交易完成后将存入账户余额。"
+            android:layout_below="@+id/textView57"
+            android:layout_alignLeft="@+id/textView49"
+            android:layout_alignStart="@+id/textView49" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="发起委托"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/textView58"
+            />
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

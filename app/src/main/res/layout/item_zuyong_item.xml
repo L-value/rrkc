@@ -132,6 +132,7 @@
         android:layout_weight="3">
 
         <Button
+            android:id="@+id/btn_Rent"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="立即租用" />
